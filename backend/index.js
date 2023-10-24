@@ -7,7 +7,7 @@ const app= express()
 //transfer the data from frontend to backend in json format
 app.use(express.json())
 app.use(cors({
-    origin: ['https://ecommerce-app-gamma-ashy.vercel.app','https://ecommerce-app-gamma-ashy.vercel.app/signup','https://ecommerce-app-gamma-ashy.vercel.app/login'],
+    origin: ['http://ecommerce-app-gamma-ashy.vercel.app','http://ecommerce-app-gamma-ashy.vercel.app/signup','http://ecommerce-app-gamma-ashy.vercel.app/login'],
     methods: ["POST", "GET"],
     credentials: true
 }));
