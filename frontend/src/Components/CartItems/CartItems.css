@@ -1,0 +1,6 @@
+.cartitems-format-main{
+    grid-template-columns: 0.6fr 2fr 1fr 1fr 1fr 1fr;
+}
+.cartItems-format{
+    font-size: 17px;
+}
