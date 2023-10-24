@@ -13,7 +13,7 @@ const SignUp = () => {
     axios.defaults.withCredentials = true;
     const handleSubmit=(e)=>{
         e.preventDefault();
-        axios.post('https://ecommerce-app-api-ashy.vercel.app/signup',{name , email , password})
+        axios.post('https://e-commerce-api-alpha.vercel.app/signup',{name , email , password})
         .then((result)=>{
             alert("Account Created")
             navigate('/')
