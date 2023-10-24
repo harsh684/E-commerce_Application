@@ -13,7 +13,9 @@ app.use(cors({
 }));
 
 mongoose.connect(`mongodb+srv://Harsh:Harsh123@cluster0.gkekzpj.mongodb.net/users?retryWrites=true&w=majority`);
-
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
 app.post("/login",(req,res)=>{
     const {email, password}=req.body;
     UserModel.findOne({email: email})
