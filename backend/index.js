@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors({
     origin: '*',
     methods: ["POST", "GET"],
-    credentials: true
+    credentials: false
 }));
 
 mongoose.connect(`mongodb+srv://Harsh:Harsh123@cluster0.gkekzpj.mongodb.net/users?retryWrites=true&w=majority`);
