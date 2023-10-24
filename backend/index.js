@@ -7,9 +7,8 @@ const app= express()
 //transfer the data from frontend to backend in json format
 app.use(express.json())
 app.use(cors({
-    origin: '*',
-    methods: ["POST", "GET"],
-    credentials: false
+    origin: 'https://ecommerce-app-gamma-ashy.vercel.app',
+    methods: ["POST", "GET"]
 }));
 
 mongoose.connect(`mongodb+srv://Harsh:Harsh123@cluster0.gkekzpj.mongodb.net/users?retryWrites=true&w=majority`);
