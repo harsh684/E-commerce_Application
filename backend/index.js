@@ -8,6 +8,7 @@ const app= express()
 app.use(express.json())
 app.use(cors({
     origin: 'https://ecommerce-app-gamma-ashy.vercel.app/signup',
+    Access-Control-Allow-Origin: '*',
     methods: ["POST", "GET"],
     credentials: true
 }));
