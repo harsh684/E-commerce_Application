@@ -10,6 +10,7 @@ const SignUp = () => {
     const [password, setPassword]= useState();
     const navigate= useNavigate();
 
+    axios.defaults.withCredentials = true;
     const handleSubmit=(e)=>{
         e.preventDefault();
         axios.post('https://ecommerce-app-api-ashy.vercel.app/signup',{name , email , password})
