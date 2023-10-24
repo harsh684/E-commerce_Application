@@ -7,10 +7,12 @@ const app= express()
 //transfer the data from frontend to backend in json format
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:3000"]
+    origin: '*',
+    methods: ["POST", "GET"],
+    credentials: true
 }));
 
-mongoose.connect("mongodb://127.0.0.1:27017/SignUp");
+mongoose.connect(`mongodb+srv://Harsh:Harsh123@cluster0.gkekzpj.mongodb.net/users?retryWrites=true&w=majority`);
 
 app.post("/login",(req,res)=>{
     const {email, password}=req.body;
