@@ -11,7 +11,7 @@ const Login = () => {
     axios.defaults.withCredentials = true;
     const handleSubmit=(e)=>{
         e.preventDefault();
-        axios.post('https://ecommerce-app-api-ashy.vercel.app/login', {email , password})
+        axios.post('https://e-commerce-api-alpha.vercel.app/login', {email , password})
         .then((result)=>{
             console.log(result)
             if(result.data==="Success"){
